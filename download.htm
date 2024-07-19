@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>常用链接跳转</title>
+<script>
+function openUrlInNewWindow1() 
+{
+    var baseUrl = "https://file.zhaobide.com/uservice/download_file.aspx?jrs="; //固定部分网址
+    var inputUrl = document.getElementById("inputUrl").value; // 获取输入的部分
+    var fullUrl = baseUrl + inputUrl; // 组合网址
+    window.open(fullUrl, '_blank'); // 在新窗口打开网址
+}
+function openUrlInNewWindow2() 
+{
+    var baseUrl = "http://sjst.zjzwfw.gov.cn/egov/was/web/spsite/service/license/licensePDFForJST.jsp?"; //固定部分网址
+    var inputUrl = document.getElementById("inputUrl").value; // 获取输入的部分
+    var fullUrl = baseUrl + inputUrl; // 组合网址
+    window.open(fullUrl, '_blank'); // 在新窗口打开网址
+}
+function openUrlInNewWindow3() 
+{
+    var baseUrl = "https://zj.zhujianpeixun.com/exammanage/GetCertificateDetail?projectId="; //固定部分网址
+    var inputUrl = document.getElementById("inputUrl").value; // 获取输入的部分
+    var fullUrl = baseUrl + inputUrl; // 组合网址
+    window.open(fullUrl, '_blank'); // 在新窗口打开网址
+}
+</script>
+</head>
+<body>
+1、招必得项目资料下载
+<input type="text" id="inputUrl" placeholder="请输入“jrs=”后面的代码">
+<button onclick="openUrlInNewWindow1()">打开</button>
+ <br>
+ <br>
+2、浙江政务网证书手动下载
+<input type="text" id="inputUrl" placeholder="请输入“jsp?”后面的代码">
+<button onclick="openUrlInNewWindow2()">打开</button>
+ <br>
+ <br>
+3、施工现场专业人员继续教育学时证明下载
+<input type="text" id="inputUrl" placeholder="请输入“projectId=”后面的代码">
+<button onclick="openUrlInNewWindow3()">打开</button>
+ <br>
+ <br>
+</body>
+</html>
