@@ -1,5 +1,4 @@
-<html lang="en">
-<head>
+<html lang="en"><head>
 <meta charset="UTF-8">
 <title>常用链接跳转</title>
 <script>
@@ -24,6 +23,14 @@ function openUrlInNewWindow3()
     var fullUrl3 = baseUrl3 + inputUrl3; // 组合网址
     window.open(fullUrl3, '_blank'); // 在新窗口打开网址
 }
+function openUrlInNewWindow4() 
+{
+    var baseUrl401 = "http://sjst.zjzwfw.gov.cn/egov/was/web/spsite/service/license/QRcode/LicenseDetail.html?bbdh="; //固定部分网址
+    var inputUrl4 = document.getElementById("inputUrl4").value; // 获取输入的部分
+    var baseUrl402 = "&type=3&fn=getJzyqyzzDetail"; //固定部分网址
+    var fullUrl4 = baseUrl401 + inputUrl4 + baseUrl402; // 组合网址
+    window.open(fullUrl4, '_blank'); // 在新窗口打开网址
+}
 </script>
 </head>
 <body>
@@ -42,5 +49,10 @@ function openUrlInNewWindow3()
 <button onclick="openUrlInNewWindow3()">打开</button>
  <br>
  <br>
-</body>
-</html>
+4、建筑企业三类人员证书查询（浙江政务网）
+<input type="text" id="inputUrl4" placeholder="请输入证书编号">
+<button onclick="openUrlInNewWindow4()">打开</button>
+ <br>
+ <br>
+
+</body></html>
